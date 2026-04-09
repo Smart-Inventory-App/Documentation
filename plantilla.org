@@ -12,13 +12,9 @@ Makkos Juan Sebastian
 
 * Architecture Diagram
 
-
-
 ** Arquitectura General
 
 ** Microservicios
-
-
 
 
 * App Backend

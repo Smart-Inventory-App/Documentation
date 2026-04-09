@@ -3,10 +3,10 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2026-04-09 Thu 23:41 -->
+<!-- 2026-04-09 Thu 23:56 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Trabajo Práctico: Melodia - Grupo 2</title>
+<title>&lrm;</title>
 <meta name="author" content="DESKTOP-R6SUU7C" />
 <meta name="generator" content="Org Mode" />
 <style>
@@ -199,94 +199,70 @@
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery.stickytableheaders@0.1.19/js/jquery.stickytableheaders.min.js"></script>
 <script type="text/javascript" src="assets/theme/readtheorg_theme/js/readtheorg.js"></script>
-</head>
+<style>#search-container{display:none!important;}</style>\n</head>
 <body>
 <div id="content" class="content">
-<h1 class="title">Trabajo Práctico: Melodia - Grupo 2</h1>
 <div id="table-of-contents" role="doc-toc">
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#orgcbd78d4">1. Architecture Diagram</a>
+<li><a href="#org6a87251">1. Architecture Diagram</a>
 <ul>
-<li><a href="#orgc8eb0b7">1.1. Arquitectura General (Excalidraw)</a></li>
-<li><a href="#org7aee0c2">1.2. Microservicios</a></li>
+<li><a href="#org705690f">1.1. Arquitectura General</a></li>
+<li><a href="#org9182cd5">1.2. Microservicios</a></li>
 </ul>
 </li>
-<li><a href="#orgccbbbf1">2. App Backend</a>
+<li><a href="#org2b2905a">2. App Backend</a>
 <ul>
-<li><a href="#org08f5e70">2.1. Objetivo</a></li>
-<li><a href="#orgd872a7d">2.2. Stack</a></li>
-<li><a href="#org6f5563b">2.3. Código, organización y testing</a></li>
-<li><a href="#orgb7941ee">2.4. Deployment</a></li>
-<li><a href="#org85cac0d">2.5. Test Coverage</a></li>
-<li><a href="#orge0bf10b">2.6. CI/CD</a></li>
+<li><a href="#org3d692c4">2.1. Objetivo</a></li>
+<li><a href="#org5035fa2">2.2. Stack</a></li>
+<li><a href="#org643bb43">2.3. Código, organización y testing</a></li>
+<li><a href="#org5b0161d">2.4. Deployment</a></li>
+<li><a href="#org0eb78cb">2.5. Test Coverage</a></li>
+<li><a href="#orgdffe910">2.6. CI/CD</a></li>
 </ul>
 </li>
-<li><a href="#org27a6235">3. Web Backend</a>
+<li><a href="#orgc9453fa">3. Web Backend</a>
 <ul>
-<li><a href="#orgcb7a4b3">3.1. Objetivo</a></li>
-<li><a href="#org4e175d1">3.2. Stack</a></li>
+<li><a href="#org97a99d4">3.1. Objetivo</a></li>
+<li><a href="#org9006901">3.2. Stack</a></li>
 </ul>
 </li>
-<li><a href="#org6ae856c">4. Mobile App</a></li>
-<li><a href="#org2bc1c31">5. Features</a>
-<ul>
-<li>
-<ul>
-<li><a href="#orgd3ef082">5.0.1. Lecciones aprendidas principales</a></li>
-</ul>
-</li>
-</ul>
-</li>
+<li><a href="#org5cd5660">4. Mobile App</a></li>
+<li><a href="#orgc96c1c7">5. Features</a></li>
+<li><a href="#orgdc47591">6. Lecciones aprendidas principales</a></li>
 </ul>
 </div>
 </div>
+<p>
+Participantes:
+Makkos Juan Sebastian
+</p>
 
-<div id="outline-container-orgcbd78d4" class="outline-2">
-<h2 id="orgcbd78d4"><span class="section-number-2">1.</span> Architecture Diagram</h2>
+<div id="outline-container-org6a87251" class="outline-2">
+<h2 id="org6a87251"><span class="section-number-2">1.</span> Architecture Diagram</h2>
 <div class="outline-text-2" id="text-1">
-
-<div id="orgf943901" class="figure">
-<p><img src="assets/arch-1.png" alt="arch-1.png" />
-</p>
 </div>
+<div id="outline-container-org705690f" class="outline-3">
+<h3 id="org705690f"><span class="section-number-3">1.1.</span> Arquitectura General</h3>
 </div>
 
-<div id="outline-container-orgc8eb0b7" class="outline-3">
-<h3 id="orgc8eb0b7"><span class="section-number-3">1.1.</span> Arquitectura General (Excalidraw)</h3>
-<div class="outline-text-3" id="text-1-1">
-
-<div id="org8e546b6" class="figure">
-<p><img src="assets/arch-excalidraw.png" alt="arch-excalidraw.png" />
-</p>
-<p><span class="figure-number">Figure 1: </span>Diagrama de arquitectura general creado con Excalidraw</p>
-</div>
+<div id="outline-container-org9182cd5" class="outline-3">
+<h3 id="org9182cd5"><span class="section-number-3">1.2.</span> Microservicios</h3>
 </div>
 </div>
 
-<div id="outline-container-org7aee0c2" class="outline-3">
-<h3 id="org7aee0c2"><span class="section-number-3">1.2.</span> Microservicios</h3>
-<div class="outline-text-3" id="text-1-2">
 
-<div id="org1a967e2" class="figure">
-<p><img src="assets/arch-microservices.png" alt="arch-microservices.png" />
-</p>
-</div>
-</div>
-</div>
-</div>
-
-<div id="outline-container-orgccbbbf1" class="outline-2">
-<h2 id="orgccbbbf1"><span class="section-number-2">2.</span> App Backend</h2>
+<div id="outline-container-org2b2905a" class="outline-2">
+<h2 id="org2b2905a"><span class="section-number-2">2.</span> App Backend</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org08f5e70" class="outline-3">
-<h3 id="org08f5e70"><span class="section-number-3">2.1.</span> Objetivo</h3>
+<div id="outline-container-org3d692c4" class="outline-3">
+<h3 id="org3d692c4"><span class="section-number-3">2.1.</span> Objetivo</h3>
 </div>
 
-<div id="outline-container-orgd872a7d" class="outline-3">
-<h3 id="orgd872a7d"><span class="section-number-3">2.2.</span> Stack</h3>
+<div id="outline-container-org5035fa2" class="outline-3">
+<h3 id="org5035fa2"><span class="section-number-3">2.2.</span> Stack</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
 Librerías y tecnologías:
@@ -294,8 +270,8 @@ Librerías y tecnologías:
 </div>
 </div>
 
-<div id="outline-container-org6f5563b" class="outline-3">
-<h3 id="org6f5563b"><span class="section-number-3">2.3.</span> Código, organización y testing</h3>
+<div id="outline-container-org643bb43" class="outline-3">
+<h3 id="org643bb43"><span class="section-number-3">2.3.</span> Código, organización y testing</h3>
 </div>
 
 
@@ -303,53 +279,55 @@ Librerías y tecnologías:
 
 
 
-<div id="outline-container-orgb7941ee" class="outline-3">
-<h3 id="orgb7941ee"><span class="section-number-3">2.4.</span> Deployment</h3>
+<div id="outline-container-org5b0161d" class="outline-3">
+<h3 id="org5b0161d"><span class="section-number-3">2.4.</span> Deployment</h3>
 </div>
 
 
 
-<div id="outline-container-org85cac0d" class="outline-3">
-<h3 id="org85cac0d"><span class="section-number-3">2.5.</span> Test Coverage</h3>
+<div id="outline-container-org0eb78cb" class="outline-3">
+<h3 id="org0eb78cb"><span class="section-number-3">2.5.</span> Test Coverage</h3>
 </div>
 
-<div id="outline-container-orge0bf10b" class="outline-3">
-<h3 id="orge0bf10b"><span class="section-number-3">2.6.</span> CI/CD</h3>
+<div id="outline-container-orgdffe910" class="outline-3">
+<h3 id="orgdffe910"><span class="section-number-3">2.6.</span> CI/CD</h3>
 </div>
 </div>
 
-<div id="outline-container-org27a6235" class="outline-2">
-<h2 id="org27a6235"><span class="section-number-2">3.</span> Web Backend</h2>
+<div id="outline-container-orgc9453fa" class="outline-2">
+<h2 id="orgc9453fa"><span class="section-number-2">3.</span> Web Backend</h2>
 <div class="outline-text-2" id="text-3">
 </div>
-<div id="outline-container-orgcb7a4b3" class="outline-3">
-<h3 id="orgcb7a4b3"><span class="section-number-3">3.1.</span> Objetivo</h3>
+<div id="outline-container-org97a99d4" class="outline-3">
+<h3 id="org97a99d4"><span class="section-number-3">3.1.</span> Objetivo</h3>
 </div>
 
-<div id="outline-container-org4e175d1" class="outline-3">
-<h3 id="org4e175d1"><span class="section-number-3">3.2.</span> Stack</h3>
+<div id="outline-container-org9006901" class="outline-3">
+<h3 id="org9006901"><span class="section-number-3">3.2.</span> Stack</h3>
 </div>
-</div>
-
-
-
-
-<div id="outline-container-org6ae856c" class="outline-2">
-<h2 id="org6ae856c"><span class="section-number-2">4.</span> Mobile App</h2>
 </div>
 
 
-<div id="outline-container-org2bc1c31" class="outline-2">
-<h2 id="org2bc1c31"><span class="section-number-2">5.</span> Features</h2>
-<div class="outline-text-2" id="text-5">
+
+
+<div id="outline-container-org5cd5660" class="outline-2">
+<h2 id="org5cd5660"><span class="section-number-2">4.</span> Mobile App</h2>
 </div>
-<div id="outline-container-orgd3ef082" class="outline-4">
-<h4 id="orgd3ef082"><span class="section-number-4">5.0.1.</span> Lecciones aprendidas principales</h4>
+
+
+<div id="outline-container-orgc96c1c7" class="outline-2">
+<h2 id="orgc96c1c7"><span class="section-number-2">5.</span> Features</h2>
 </div>
+
+
+
+<div id="outline-container-orgdc47591" class="outline-2">
+<h2 id="orgdc47591"><span class="section-number-2">6.</span> Lecciones aprendidas principales</h2>
 </div>
 </div>
 <div id="postamble" class="status">
-<p class="date">Created: 2026-04-09 Thu 23:41</p>
+<p class="author">Author: DESKTOP-R6SUU7C</p>
+<p class="date">Created: 2026-04-09 Thu 23:56</p>
 <p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
