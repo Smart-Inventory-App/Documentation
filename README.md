@@ -1,18 +1,18 @@
 # Documentation
 
-Informe preparado para publicarse automáticamente en GitHub Pages.
+Informe preparado para publicarse con Cloudflare.
 
 ## Publicación
 
-- El contenido principal está en [docs/index.html](docs/index.html).
-- El despliegue automático está configurado en [.github/workflows/pages.yml](.github/workflows/pages.yml).
+- El contenido principal está en [docs/informe.html](docs/informe.html).
+- El despliegue de GitHub Pages está desactivado en este repositorio.
 
 ## Uso
 
-1. Haz cambios en el informe o en los estilos.
+1. Haz cambios en el informe.
 2. Sube los cambios a la rama `main`.
-3. GitHub Actions publicará la versión nueva en GitHub Pages.
+3. Publica el contenido desde tu flujo de Cloudflare.
 
 ## Nota
 
-Si GitHub Pages aún no está activado en el repositorio, hay que seleccionar la fuente de publicación como **GitHub Actions** en la configuración del proyecto.
+Si GitHub Pages estuvo activo previamente, desactívalo en la configuración del repositorio en **Settings > Pages**.
