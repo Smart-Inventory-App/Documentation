@@ -4,7 +4,7 @@ Informe preparado para publicarse con Cloudflare.
 
 ## Publicación
 
-- El contenido principal está en [docs/informe.html](docs/informe.html).
+- El contenido principal está en [docs/index.html](docs/index.html).
 - El despliegue automático está en [.github/workflows/cloudflare-pages.yml](.github/workflows/cloudflare-pages.yml).
 
 ## Uso
