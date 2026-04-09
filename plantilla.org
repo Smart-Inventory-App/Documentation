@@ -185,27 +185,7 @@ package "Metrics Go (Golang)\nAnalytics Service" {
     component [Cron Jobs\n- Scheduled Processing\n- Data Cleanup] as cronjobs
 }
 
-' Service Communication
-auth --> streammetrics : User Activity
-artists --> contentmetrics : Artist Data
-content --> streammetrics : Content Usage
-social --> socialmetrics : Social Interactions
-discovery --> usermetrics : Discovery Events
 
-webintegration --> auth : Admin Access
-webintegration --> artists : Artist Admin
-webintegration --> content : Content Admin
-
-aggregation --> streammetrics : Aggregate Data
-aggregation --> usermetrics : Aggregate Data
-aggregation --> contentmetrics : Aggregate Data
-aggregation --> socialmetrics : Aggregate Data
-
-@enduml
-#+END_SRC
-
-#+RESULTS:
-[[file:assets/arch-microservices.png]]
 
 * App Backend
 
