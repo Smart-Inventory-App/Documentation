@@ -60,5 +60,5 @@ Librerías y tecnologías:
 
 
 
-*** Lecciones aprendidas principales
+* Lecciones aprendidas principales
 

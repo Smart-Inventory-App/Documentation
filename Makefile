@@ -34,6 +34,11 @@ $(OUTPUT_HTML): $(ORG_SOURCE)
 			--eval "(find-file \"$(ORG_SOURCE)\")" \
 			--eval "(org-html-export-to-html nil nil nil nil nil)"; \
 		cp $(EXPORT_HTML) $(OUTPUT_HTML); \
+		sed -i '/search\.css/d' $(OUTPUT_HTML); \
+		sed -i '/search\.js/d' $(OUTPUT_HTML); \
+		if ! grep -q '#search-container{display:none!important;}' $(OUTPUT_HTML); then \
+			sed -i 's@</head>@<style>#search-container{display:none!important;}</style>\\n</head>@' $(OUTPUT_HTML); \
+		fi; \
 		rm -f $(EXPORT_HTML); \
 	else \
 		echo "Saltando build local (sin emacs)."; \
