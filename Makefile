@@ -26,7 +26,7 @@ $(OUTPUT_HTML): $(ORG_SOURCE)
 			--eval "(require 'org)" \
 			--eval "(require 'ox-html)" \
 			--eval "(find-file \"$(ORG_SOURCE)\")" \
-			--eval "(org-html-export-to-html nil nil nil t nil)"; \
+			--eval "(org-html-export-to-html nil nil nil nil nil)"; \
 		cp $(EXPORT_HTML) $(OUTPUT_HTML); \
 		rm -f $(EXPORT_HTML); \
 	else \
