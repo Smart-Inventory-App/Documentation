@@ -23,4 +23,4 @@ Configura estos secrets en **Settings > Secrets and variables > Actions**:
 
 ## Nota
 
-Si GitHub Pages estuvo activo previamente, desactívalo en la configuración del repositorio en **Settings > Pages**. 
+Si GitHub Pages estuvo activo previamente, desactívalo en la configuración del repositorio en **Settings > Pages**.
