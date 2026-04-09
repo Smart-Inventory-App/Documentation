@@ -2,10 +2,28 @@
 
 Informe preparado para publicarse con Cloudflare.
 
+## Como funciona
+
+Este repo publica la documentacion automaticamente en Cloudflare Pages a partir de un archivo fuente en Org Mode.
+
+Flujo:
+
+1. Editas el contenido en [plantilla.org](plantilla.org).
+2. El comando `make docs` genera [docs/index.html](docs/index.html).
+3. El workflow [cloudflare-pages.yml](.github/workflows/cloudflare-pages.yml) ejecuta ese build en cada push a `main`.
+4. Cloudflare Pages publica la carpeta [docs](docs).
+
 ## Publicación
 
 - El contenido principal está en [docs/index.html](docs/index.html).
 - El despliegue automático está en [.github/workflows/cloudflare-pages.yml](.github/workflows/cloudflare-pages.yml).
+
+## Build local
+
+Para previsualizar antes de pushear:
+
+1. Ejecuta `make docs` desde la raiz del repo.
+2. Abre [docs/index.html](docs/index.html) en el navegador.
 
 ## Uso
 
