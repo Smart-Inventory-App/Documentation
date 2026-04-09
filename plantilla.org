@@ -1,6 +1,13 @@
 #+TITLE: Trabajo Práctico: Melodia - Grupo 2
-#+SETUPFILE: ./org/theme-readtheorg.setup
-#+SETUPFILE: ./org/setup.org
+#+OPTIONS: toc:t num:t
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="assets/theme/readtheorg_theme/css/htmlize.css"/>
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="assets/theme/readtheorg_theme/css/readtheorg.css"/>
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="assets/theme/readtheorg_theme/css/search.css"/>
+#+HTML_HEAD: <script type="text/javascript" src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+#+HTML_HEAD: <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+#+HTML_HEAD: <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery.stickytableheaders@0.1.19/js/jquery.stickytableheaders.min.js"></script>
+#+HTML_HEAD: <script type="text/javascript" src="assets/theme/readtheorg_theme/js/search.js"></script>
+#+HTML_HEAD: <script type="text/javascript" src="assets/theme/readtheorg_theme/js/readtheorg.js"></script>
 
 #+BEGIN_EXPORT latex
 \begin{titlepage}
