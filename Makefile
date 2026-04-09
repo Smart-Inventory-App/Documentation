@@ -4,9 +4,9 @@ EXPORT_HTML := $(basename $(ORG_SOURCE)).html
 
 EMACS ?= emacs
 
-.PHONY: docs clean check-emacs
+.PHONY: docs clean check-emacs validate-html
 
-docs: check-emacs $(OUTPUT_HTML)
+docs: check-emacs $(OUTPUT_HTML) validate-html
 
 check-emacs:
 	@if command -v $(EMACS) >/dev/null 2>&1; then \
@@ -36,3 +36,8 @@ $(OUTPUT_HTML): $(ORG_SOURCE)
 
 clean:
 	@rm -f $(OUTPUT_HTML) $(EXPORT_HTML)
+
+validate-html:
+	@test -f $(OUTPUT_HTML)
+	@grep -qi "<html" $(OUTPUT_HTML) || { echo "Error: docs/index.html no es un HTML completo."; exit 1; }
+	@grep -qi "<head" $(OUTPUT_HTML) || { echo "Error: docs/index.html no contiene <head>."; exit 1; }
