@@ -24,11 +24,6 @@
     \begin{tabular}{ | l | l | l | }
       \hline
       Alumno & Padrón & Email \\ \hline
-      BRZOZA, Valeria & 107523 & vbrzoza@fi.uba.ar \\ \hline
-      CICHERO, Tomas & 107973 & tcichero@fi.uba.ar  \\ \hline
-      CONTRERAS VILLARROEL, Ricardo Luis & 107239 & rcontreras@fi.uba.ar \\ \hline
-      DEALBERA, Pablo Andres & 106858 & pdealbera@fi.uba.ar \\ \hline
-      LANZILLOTTA, Valentina & 108257 & vlanzillotta@fi.uba.ar \\ \hline
       MAKKOS, Juan Sebastian & 106229 & jmakkos@fi.uba.ar \\ \hline
     \end{tabular}
     \vfill

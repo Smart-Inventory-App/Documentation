@@ -4,9 +4,15 @@ EXPORT_HTML := $(basename $(ORG_SOURCE)).html
 
 EMACS ?= emacs
 
-.PHONY: docs clean check-emacs validate-html
+.PHONY: docs clean check-emacs validate-html print-source
 
-docs: check-emacs $(OUTPUT_HTML) validate-html
+docs: print-source check-emacs $(OUTPUT_HTML) validate-html
+
+print-source:
+	@echo "Usando ORG_SOURCE=$(ORG_SOURCE)"
+	@if [ "$(ORG_SOURCE)" = "plantilla.org" ] && [ -f otro_proyecto/plantilla.org ]; then \
+		echo "Aviso: tambien existe otro_proyecto/plantilla.org y NO se usa para el deploy."; \
+	fi
 
 check-emacs:
 	@if command -v $(EMACS) >/dev/null 2>&1; then \
