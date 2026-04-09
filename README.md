@@ -5,13 +5,21 @@ Informe preparado para publicarse con Cloudflare.
 ## Publicación
 
 - El contenido principal está en [docs/informe.html](docs/informe.html).
-- El despliegue de GitHub Pages está desactivado en este repositorio.
+- El despliegue automático está en [.github/workflows/cloudflare-pages.yml](.github/workflows/cloudflare-pages.yml).
 
 ## Uso
 
 1. Haz cambios en el informe.
 2. Sube los cambios a la rama `main`.
-3. Publica el contenido desde tu flujo de Cloudflare.
+3. GitHub Actions desplegará automáticamente a Cloudflare Pages.
+
+## Secrets requeridos
+
+Configura estos secrets en **Settings > Secrets and variables > Actions**:
+
+- `CLOUDFLARE_API_TOKEN`
+- `CLOUDFLARE_ACCOUNT_ID`
+- `CLOUDFLARE_PROJECT_NAME`
 
 ## Nota
 
