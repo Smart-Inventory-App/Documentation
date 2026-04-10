@@ -25,11 +25,18 @@ jobs:
       - name: Build docs from plantilla.org
         run: make docs
 
+      - name: Prepare deploy bundle
+        run: |
+          rm -rf dist
+          mkdir -p dist
+          cp index.html dist/index.html
+          cp -r assets dist/
+
       - name: Validate generated HTML
         run: |
-          test -f docs/index.html
-          grep -qi "<html" docs/index.html
-          grep -qi "<head" docs/index.html
+          test -f dist/index.html
+          grep -qi "<html" dist/index.html
+          grep -qi "<head" dist/index.html
 
       - name: Deploy to Cloudflare Pages
         uses: cloudflare/pages-action@v1
@@ -37,5 +44,5 @@ jobs:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           projectName: documentation-smartinventory1
-          directory: docs
+          directory: dist
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}

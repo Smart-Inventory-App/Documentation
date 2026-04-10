@@ -1,6 +1,8 @@
 ORG_SOURCE := plantilla.org
-OUTPUT_HTML := docs/index.html
+OUTPUT_HTML := index.html
 EXPORT_HTML := $(basename $(ORG_SOURCE)).html
+ASSET_SOURCE := docs/assets
+ASSET_TARGET := assets
 
 EMACS ?= emacs
 
@@ -23,10 +25,10 @@ check-emacs:
 		exit 127; \
 	fi; \
 	echo "Aviso: '$(EMACS)' no esta instalado localmente."; \
-	echo "No hace falta instalar nada: en push a main, GitHub Actions genera docs/index.html automaticamente.";
+	echo "No hace falta instalar nada: en push a main, GitHub Actions genera index.html automaticamente.";
 
 $(OUTPUT_HTML): $(ORG_SOURCE)
-	@mkdir -p docs
+	@mkdir -p $(ASSET_TARGET)
 	@if command -v $(EMACS) >/dev/null 2>&1; then \
 		$(EMACS) --batch -Q \
 			--eval "(require 'org)" \
@@ -34,6 +36,8 @@ $(OUTPUT_HTML): $(ORG_SOURCE)
 			--eval "(find-file \"$(ORG_SOURCE)\")" \
 			--eval "(org-html-export-to-html nil nil nil nil nil)"; \
 		cp $(EXPORT_HTML) $(OUTPUT_HTML); \
+		rm -rf $(ASSET_TARGET); \
+		cp -r $(ASSET_SOURCE) $(ASSET_TARGET); \
 		sed -i '/search\.css/d' $(OUTPUT_HTML); \
 		sed -i '/search\.js/d' $(OUTPUT_HTML); \
 		if ! grep -q '#search-container{display:none!important;}' $(OUTPUT_HTML); then \
@@ -47,8 +51,9 @@ $(OUTPUT_HTML): $(ORG_SOURCE)
 
 clean:
 	@rm -f $(OUTPUT_HTML) $(EXPORT_HTML)
+	@rm -rf $(ASSET_TARGET)
 
 validate-html:
 	@test -f $(OUTPUT_HTML)
-	@grep -qi "<html" $(OUTPUT_HTML) || { echo "Error: docs/index.html no es un HTML completo."; exit 1; }
-	@grep -qi "<head" $(OUTPUT_HTML) || { echo "Error: docs/index.html no contiene <head>."; exit 1; }
+	@grep -qi "<html" $(OUTPUT_HTML) || { echo "Error: index.html no es un HTML completo."; exit 1; }
+	@grep -qi "<head" $(OUTPUT_HTML) || { echo "Error: index.html no contiene <head>."; exit 1; }
