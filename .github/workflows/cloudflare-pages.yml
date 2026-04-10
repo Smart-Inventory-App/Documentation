@@ -30,7 +30,7 @@ jobs:
           rm -rf dist
           mkdir -p dist
           cp index.html dist/index.html
-          cp -r assets dist/
+          cp -r docs/assets dist/assets
 
       - name: Validate generated HTML
         run: |
