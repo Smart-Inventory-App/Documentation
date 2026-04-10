@@ -9,6 +9,9 @@
 
 Participantes:
 Makkos Juan Sebastian
+Agustin Cavo
+Esteban
+Gianluca
 
 * Architecture Diagram
 
