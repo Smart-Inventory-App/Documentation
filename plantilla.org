@@ -23,17 +23,10 @@ Makkos Juan Sebastian
 
 ** Stack
 
-Librerías y tecnologías:
-
 ** Código, organización y testing
 
 
-
-
-
-
 ** Deployment
-
 
 
 ** Test Coverage
