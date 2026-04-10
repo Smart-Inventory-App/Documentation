@@ -7,14 +7,15 @@
 #+HTML_HEAD: <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery.stickytableheaders@0.1.19/js/jquery.stickytableheaders.min.js"></script>
 #+HTML_HEAD: <script type="text/javascript" src="assets/theme/readtheorg_theme/js/readtheorg.js"></script>
 
-Participantes:
-Makkos Juan Sebastian
+* Participantes:
 
-Agustin Cavo
+- Makkos Juan Sebastian - 106229
 
-Esteban
+- Agustin Cavo
 
-Gianluca
+- Esteban
+
+- Gianluca
 
 * Architecture Diagram
 
