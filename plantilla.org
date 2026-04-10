@@ -1,4 +1,4 @@
-
+#+TITLE: Smart Inventory Doc
 #+OPTIONS: toc:t num:t
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="assets/theme/readtheorg_theme/css/htmlize.css"/>
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="assets/theme/readtheorg_theme/css/readtheorg.css"/>

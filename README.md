@@ -1,4 +1,4 @@
-# Documentation
+# Smart Inventory Doc
 
 Informe preparado para publicarse con Cloudflare.
 
